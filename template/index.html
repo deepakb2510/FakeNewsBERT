@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fake News Detection</title>
+</head>
+<body>
+	<h3>Fake news Detection</h3>
+	<form method="post" enctype="multipart/form-data" action="predictNews">
+		{% csrf_token %}
+		<textarea type="text" name="news" placeholder="News"></textarea><br>
+		<button name="submit">Submit</button>
+	</form>
+	 {{a}}
+</body>
+</html>
